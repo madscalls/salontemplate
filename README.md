@@ -12,7 +12,7 @@ A website template for a hair salon, by Whelk Works (React + Vite). Black and go
 npm install
 npm run dev      # http://localhost:5173
 npm run build    # production build in dist/
-npm run preview  # http://localhost:4173/salonTemplate/
+npm run preview  # http://localhost:4173/salontemplate/
 ```
 
 ## Make it a client's
@@ -29,4 +29,4 @@ npm run preview  # http://localhost:4173/salonTemplate/
 - **Photos:** these are Unsplash stock photos. Swap in the salon's own space, team and work. The team photos especially should be the real stylists.
 - **Booking:** the booking flow is front-end only, and the "booked" time slots are made up. Connect it to the salon's booking system (Square Appointments, Vagaro, Boulevard, GlossGenius and so on), or replace the page with their booking widget.
 - **Forms:** the newsletter form only shows a thank-you message. Connect it to an email service before launch.
-- **Deploy:** the build is set up for GitHub Pages at `/salonTemplate/` (`BASE` in `vite.config.js`). Change it if the repo has a different name, or to `/` for a custom domain or Cloudflare Pages. A copy of `index.html` is saved as `404.html` so `/services` and `/book` load on refresh.
+- **Deploy:** pushes to `main` deploy to GitHub Pages via `.github/workflows/deploy.yml`. The build is set up for `https://madscalls.github.io/salontemplate/` (`BASE` in `vite.config.js`). Change it if the repo has a different name, or to `/` for a custom domain or Cloudflare Pages. A copy of `index.html` is saved as `404.html` so `/services` and `/book` load on refresh.

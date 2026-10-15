@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react';
 import fs from 'node:fs';
 import path from 'node:path';
 
-// GitHub Pages serves the site from /salonTemplate/. Change BASE if the repo name differs.
-const BASE = '/salonTemplate/';
+// GitHub Pages serves the site from /salontemplate/. Change BASE if the repo name differs.
+const BASE = '/salontemplate/';
 
 export default defineConfig(({ command, isPreview }) => ({
   base: command === 'build' || isPreview ? BASE : '/',
